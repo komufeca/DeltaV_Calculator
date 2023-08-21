@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta V calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="module" defer></script>
+</head>
+<body>
+    <h1>Simple delta-v calculator</h1>
+    <div class="calculator-container">
+        <div>
+            <input type="number" id="isp-input" placeholder="ISP">
+            <select id="isp-unit">
+                <option value="seconds">s</option>
+                <option value="minutes">min</option>
+                <option value="hours">h</option>
+            </select>
+        </div>
+        <div>
+            <input type="number" id="standard-gravity-input" placeholder="Standard gravity" value="9.807">
+            <select id="standrard-gravity-unit">
+                <option value="m/s">m/s</option>
+            </select>
+        </div>
+        <div>
+            <input type="number" id="initial-mass-input" placeholder="Initial mass">
+            <select id="initial-mass-unit">
+                <option value="kilograms">kg</option>
+                <option value="tons">t</option>
+            </select>
+        </div>
+        <div>
+            <input type="number" id="final-mass-input" placeholder="Final mass">
+            <select id="final-mass-unit">
+                <option value="kilograms">kg</option>
+                <option value="tons">t</option>
+            </select>
+        </div>
+        <div>
+            <input type="number" id="deltaV-output" placeholder="Delta V">
+            <select id="deltaV-unit">
+                <option value="m/s">m/s</option>
+                <option value="km/h">km/h</option>
+            </select>
+        </div>
+        <div class="buttons-container">
+            <button id="calculate-button">Calculate</button>
+            <button id="reset-button">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
